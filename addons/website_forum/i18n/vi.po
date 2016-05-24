@@ -1,0 +1,3424 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* website_forum
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-05-15 09:14+0000\n"
+"PO-Revision-Date: 2016-05-15 09:14+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: website_forum
+#: model:mail.template,body_html:website_forum.validation_email
+msgid "\n"
+"<p>\n"
+"    Hello ${object.name},\n"
+"</p>\n"
+"<p>\n"
+"    You have been invited to validate your email in order to get access to \"${object.company_id.name}\" Q/A Forums.\n"
+"</p>\n"
+"<p>\n"
+"    To validate your email, please click on the following link:\n"
+"</p>\n"
+"<ul>\n"
+"    <li><a href=\"${ctx.get('token_url')}\">Validate my account for \"${object.company_id.name}\" Q/A Forums</a></li>\n"
+"</ul>\n"
+"<p>\n"
+"    Thanks,\n"
+"</p>\n"
+"<pre>\n"
+"--\n"
+"${object.company_id.name or ''}\n"
+"${object.company_id.email or ''}\n"
+"${object.company_id.phone or ''}\n"
+"</pre>"
+msgstr "\n"
+"<p>\n"
+"    Xin chào ${object.name},\n"
+"</p>\n"
+"<p>\n"
+"    Bạn được mời thẩm định địa chỉ email của bạn để có thể truy cập đến Diễn đàn \"${object.company_id.name}\".\n"
+"</p>\n"
+"<p>\n"
+"    Để thẩm định email, vui lòng bấm vào link sau đây:\n"
+"</p>\n"
+"<ul>\n"
+"    <li><a href=\"${ctx.get('token_url')}\">Thẩm định tài khoản của tôi cho Diễn đàn \"${object.company_id.name}\"</a></li>\n"
+"</ul>\n"
+"<p>\n"
+"    Cám ơn,\n"
+"</p>\n"
+"<pre>\n"
+"--\n"
+"${object.company_id.name or ''}\n"
+"${object.company_id.email or ''}\n"
+"${object.company_id.phone or ''}\n"
+"</pre>"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_forum.js:23
+#, python-format
+msgid " karma is required to perform this action. You can earn karma by having your answers upvoted by the community."
+msgstr " karma là bắt buộc để thực hiện hành động này. Bạn có thể kiếm thêm karma bằng cách tăng cường chất lượng các câu trả lời của bạn để được cộng đồng bình chọn nhiều hơn."
+
+#. module: website_forum
+#: model:mail.template,subject:website_forum.validation_email
+msgid "${object.company_id.name} Forums validation"
+msgstr "Thẩm định - Diễn đàn ${object.company_id.name}"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.tag
+msgid "&amp;nbsp;&amp;nbsp;<i class=\"fa fa-times\"/>&amp;nbsp;&amp;nbsp;"
+msgstr ""
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "&amp;times;"
+msgstr ""
+
+#. module: website_forum
+#: model:forum.forum,faq:website_forum.forum_help
+msgid "(The above section was adapted from Stackoverflow’s FAQ.)"
+msgstr ""
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.view_forum_forum_form
+msgid "(votes - 1) **"
+msgstr ""
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.view_forum_forum_form
+msgid "/ (days + 2) **"
+msgstr ""
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/xml/website_forum_share_templates.xml:29
+#, python-format
+msgid "45% of questions shared"
+msgstr "45% các câu hỏi được chia sẻ"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/xml/website_forum_share_templates.xml:30
+#, python-format
+msgid "65% more chance to get an\n"
+"        answer"
+msgstr "trên 65% cơ hội nhận được\n"
+"        câu trả lời"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.display_post_question_block
+#: model:ir.ui.view,arch_db:website_forum.post_description_full
+msgid "<b> [Closed]</b>"
+msgstr "<b> [Đóng]</b>"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.display_post_question_block
+#: model:ir.ui.view,arch_db:website_forum.post_description_full
+msgid "<b> [Deleted]</b>"
+msgstr "<b> [Bị Xoá]</b>"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.display_post_question_block
+#: model:ir.ui.view,arch_db:website_forum.moderation_display_post_answer
+#: model:ir.ui.view,arch_db:website_forum.post_description_full
+msgid "<b> [Offensive]</b>"
+msgstr "<b> [Có tính công kích]</b>"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.users
+msgid "<b> badges:</b>"
+msgstr "<b> huy chương:</b>"
+
+#. module: website_forum
+#: model:forum.forum,faq:website_forum.forum_help
+msgid "<b>Answers should not add or expand questions</b>. Instead\n"
+"    either edit the question or add a comment."
+msgstr "<b>Các câu trả lời không được bổ sung hay mở rộng thêm câu hỏi</b>. Thay vì thế\n"
+"    hãy sửa lại câu hỏi hoặc thêm một bình luận."
+
+#. module: website_forum
+#: model:forum.forum,faq:website_forum.forum_help
+msgid "<b>Answers should not add or expand questions</b>. Instead either edit the question edit or add a question comment."
+msgstr "<b>Các câu trả lời không được bổ sung hay mở rộng thêm câu hỏi</b>. Thay vì thế hãy sửa lại câu hỏi hoặc thêm một bình luận."
+
+#. module: website_forum
+#: model:forum.forum,faq:website_forum.forum_help
+msgid "<b>Answers should not comment other answers</b>. Instead\n"
+"    add a comment on the other answers."
+msgstr ""
+
+#. module: website_forum
+#: model:forum.forum,faq:website_forum.forum_help
+msgid "<b>Answers should not comment other answers</b>. Instead add a comment on the other answers."
+msgstr "<b>Câu trả lời không nên đưa vào phần bình luận của câu trả lời khác</b>. Thay vì thế, thêm một bình luận vào câu trả lời khác."
+
+#. module: website_forum
+#: model:forum.forum,faq:website_forum.forum_help
+msgid "<b>Answers should not start debates</b>\n"
+"    This community Q&amp;A is not a discussion group. Please avoid holding debates in\n"
+"    your answers as they tend to dilute the essence of questions and answers. For\n"
+"    brief discussions please use commenting facility."
+msgstr "<b>Các câu trả lời không nên khởi động một cuộc tranh cãi</b>\n"
+"    This community Q&amp;A is not a discussion group. Please avoid holding debates in\n"
+"    your answers as they tend to dilute the essence of questions and answers. For\n"
+"    brief discussions please use commenting facility."
+
+#. module: website_forum
+#: model:forum.forum,faq:website_forum.forum_help
+msgid "<b>Answers shouldn't just point to other Questions</b>. Instead add a question comment indication \"Possible duplicate of...\". However, it's ok to include links to other questions or answers providing relevant additional information."
+msgstr ""
+
+#. module: website_forum
+#: model:forum.forum,faq:website_forum.forum_help
+msgid "<b>Answers shouldn't just point to other questions</b>.\n"
+"    Instead add a comment indicating <i>\"Possible duplicate\n"
+"    of...\"</i>. However, it's fine to include links to other\n"
+"    questions or answers providing relevant additional\n"
+"    information."
+msgstr ""
+
+#. module: website_forum
+#: model:forum.forum,faq:website_forum.forum_help
+msgid "<b>Answers shouldn't just provide a\n"
+"    link a solution</b>. Instead provide the solution\n"
+"    description text in your answer, even if it's just a\n"
+"    copy/paste. Links are welcome, but should complementary to\n"
+"    answer, referring sources or additional reading."
+msgstr ""
+
+#. module: website_forum
+#: model:forum.forum,faq:website_forum.forum_help
+msgid "<b>Answers shouldn't just provide a link a solution</b>. Instead provide the solution description text in your answer, even if it's just a copy/paste. Links are welcome, but should complementary to answer, referring sources or additional reading."
+msgstr ""
+
+#. module: website_forum
+#: model:forum.forum,faq:website_forum.forum_help
+msgid "<b>Before you ask - please make sure to search for a similar question.</b> You can\n"
+"    search questions by their title or tags.  It’s also OK to\n"
+"    answer your own question."
+msgstr "<b>Trước khi hỏi - vui lòng chắc chắn rằng bạn đã tìm xem đã có câu hỏi tương tự được đăng chưa.</b>\n"
+"    Bạn có thể tìm các câu hỏi theo tiêu đề hoặc tag. Đôi khi, bạn cũng có thể trả lời câu hỏi của chính\n"
+"    mình."
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.user_badges
+msgid "<b>No badge yet!</b><br/>"
+msgstr "<b>Vẫn chưa có huy chương!</b><br/>"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.user_votes
+msgid "<b>No vote given by you yet!</b>"
+msgstr "<b>Bạn chưa bầu chọn cho ai cả!</b>"
+
+#. module: website_forum
+#: model:forum.forum,faq:website_forum.forum_help
+msgid "<b>Please avoid asking questions that are too subjective\n"
+"    and argumentative</b> or not relevant to this community."
+msgstr "<b>Please avoid asking questions that are too subjective\n"
+"    and argumentative</b> or not relevant to this community."
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.post_answer
+msgid "<b>Please try to give a substantial answer.</b> If you wanted to comment on the question or answer, just\n"
+"        <b>use the commenting tool.</b> Please remember that you can always <b>revise your answers</b>\n"
+"        - no need to answer the same question twice. Also, please <b>don't forget to vote</b>\n"
+"        - it really helps to select the best questions and answers!"
+msgstr ""
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.new_discussion
+msgid "<b>Share</b> Something Awesome."
+msgstr "<b>Chia sẻ</b> Điều gì đó Tuyệt vời."
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.moderation_display_post_answer
+msgid "<b>[Answer]</b>"
+msgstr "<b>[Trả lời]</b>"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.badge
+msgid "<i class=\"text-muted\"> awarded users</i>"
+msgstr "<i class=\"text-muted\"> thành viên được trao thưởng</i>"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.user_badges
+msgid "<i class=\"text-muted\">awarded users</i>"
+msgstr "<i class=\"text-muted\">thành viên được trao thưởng</i>"
+
+#. module: website_forum
+#: code:addons/website_forum/models/forum.py:507
+#, python-format
+msgid "<p>A new answer for <i>%s</i> has been posted. <a href=\"%s/forum/%s/question/%s\">Click here to access the post.</a></p>"
+msgstr "<p>Một câu trả lời mới cho <i>%s</i> đã được đăng. <a href=\"%s/forum/%s/question/%s\">Bấm vào đây để truy cập bài.</a></p>"
+
+#. module: website_forum
+#: code:addons/website_forum/models/forum.py:519
+#, python-format
+msgid "<p>A new question <i>%s</i> has been asked on %s and require your validation. <a href=\"%s/forum/%s/question/%s\">Click here to access the question.</a></p>"
+msgstr "<p>Một câu hỏi <i>%s</i> đã được hỏi trên %s và yêu cầu bạn thẩm định. <a href=\"%s/forum/%s/question/%s\">Bấm vào đây để truy cập câu hỏi đó.</a></p>"
+
+#. module: website_forum
+#: code:addons/website_forum/models/forum.py:511
+#, python-format
+msgid "<p>A new question <i>%s</i> has been asked on %s. <a href=\"%s/forum/%s/question/%s\">Click here to access the question.</a></p>"
+msgstr "<p>Một câu hỏi mới <i>%s</i> đã được hỏi trên %s. <a href=\"%s/forum/%s/question/%s\">Bấm đề xem câu hỏi.</a></p>"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.moderation_display_post_answer
+msgid "<small class=\"text-muted\">\n"
+"                    Flagged\n"
+"                </small>"
+msgstr "<small class=\"text-muted\">\n"
+"                    Được gắn cờ\n"
+"                </small>"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.user_detail_full
+msgid "<small>profile</small>"
+msgstr "<small>hồ sơ</small>"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "<span class=\"caret\"/>\n"
+"                                <span class=\"sr-only\">Select Post</span>"
+msgstr "<span class=\"caret\"/>\n"
+"                                <span class=\"sr-only\">Chọn Bài</span>"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "<span class=\"sr-only\">Toggle navigation</span>\n"
+"                        <span class=\"icon-bar\"/>\n"
+"                        <span class=\"icon-bar\"/>"
+msgstr ""
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.post_description_full
+msgid "<span class=\"text-muted\">(only one answer per question is allowed)</span>"
+msgstr "<span class=\"text-muted\">(chỉ cho phép một câu trả lời duy nhất cho mỗi câu hỏi)</span>"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.user_detail_full
+msgid "<span class=\"text-muted\">bio</span>"
+msgstr "<span class=\"text-muted\">tiểu sử</span>"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.close_post
+msgid "<span class=\"text-muted\">or</span>"
+msgstr "<span class=\"text-muted\">hoặc</span>"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.user_detail_full
+msgid "<span class=\"text-muted\">stats</span>"
+msgstr "<span class=\"text-muted\">stats</span>"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.post_description_full
+msgid "<span> on </span>"
+msgstr "<span> vào </span>"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.display_post_question_block
+msgid "<span> • </span>\n"
+"                Flagged"
+msgstr "<span> • </span>\n"
+"                Được gắn cờ"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.display_post_question_block
+#: model:ir.ui.view,arch_db:website_forum.post_description_full
+msgid "<span>By </span>"
+msgstr "<span>Bởi </span>"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.tag
+msgid "A tag is a label that categorizes your question with other,\n"
+"            similar questions. Using the right tags makes it easier for\n"
+"            others to find and answer your question."
+msgstr "Tag là một nhãn để phân loại câu hỏi của bạn với các câu hỏi\n"
+"            tương tự khác. Sử dụng tag đúng cách sẽ làm cho người khác\n"
+"            dễ dàng tìm thấy nội dung và câu trả lời của bạn hơn."
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "About This Community"
+msgstr "Về Cộng đồng này"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.post_description_full
+msgid "Accept <i class=\"fa fa-check\"/>"
+msgstr "Chấp thuật <i class=\"fa fa-check\"/>"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:114
+#, python-format
+msgid "Accept Answer"
+msgstr "Chấp thuận câu trả lời"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_answer_accept_own
+msgid "Accept an answer on own questions"
+msgstr "Chấp thuận một câu trả lời ở câu hỏi của chính mình"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_answer_accept_all
+msgid "Accept an answer to all questions"
+msgstr "Chấp thuận một câu trả lời cho tất cả câu hỏi"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.view_forum_post_search
+msgid "Accepted Answer"
+msgstr "Trả lời được Chấp thuận"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_gen_answer_accept
+msgid "Accepting an answer"
+msgstr "Chấp thuận một câu trả lời"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_property_account_payable_id
+msgid "Account Payable"
+msgstr "Khoản phải trả"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_property_account_receivable_id
+msgid "Account Receivable"
+msgstr "Khoản phải thu"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_message_needaction
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_message_needaction
+msgid "Action Needed"
+msgstr "Cần có hành động"
+
+#. module: website_forum
+#: selection:forum.post,state:0
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_active
+msgid "Active"
+msgstr "Hiệu lực"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.user_detail_full
+msgid "Activity"
+msgstr "Hoạt động"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:19
+#, python-format
+msgid "Add Content"
+msgstr "Thêm Nội dung"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.post_answer
+msgid "Add a Comment"
+msgstr "Thêm Bình luận"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_forum.editor.js:25
+#, python-format
+msgid "Add page in menu"
+msgstr "Thêm trang vào trình đơn"
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_forum_forum_allow_share
+msgid "After posting the user will be proposed to share its question or answer on social networks, enabling social network propagation of the forum content."
+msgstr "Sau khi đăng bài, người dùng sẽ được đề nghị chia share câu hỏi hoặc câu trả lời của họ lên các mạng xã hội. Enabling social network propagation of the forum content."
+
+#. module: website_forum
+#: code:addons/website_forum/controllers/main.py:187
+#: model:ir.ui.view,arch_db:website_forum.forum_index
+#, python-format
+msgid "All"
+msgstr "Tất cả"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_allow_bump
+msgid "Allow Bump"
+msgstr "Cho phép Bump"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:94
+#: model:ir.ui.view,arch_db:website_forum.display_post_question_block
+#, python-format
+msgid "Answer"
+msgstr "Trả lời"
+
+#. module: website_forum
+#: code:addons/website_forum/models/forum.py:494
+#: model:mail.message.subtype,description:website_forum.mt_answer_edit
+#: model:mail.message.subtype,name:website_forum.mt_answer_edit
+#, python-format
+msgid "Answer Edited"
+msgstr "Trả lời được sửa"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:108
+#, python-format
+msgid "Answer Posted"
+msgstr "Trả lời đã được đăng"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_gen_answer_accepted
+msgid "Answer accepted"
+msgstr "Câu trả lời được chấp thuận"
+
+#. module: website_forum
+#: model:gamification.badge,description:website_forum.badge_a_6
+msgid "Answer accepted with 15 or more votes"
+msgstr "Trả lời được chấp thuận với 15 hoặc nhiều hơn bầu chọn"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_gen_answer_downvote
+msgid "Answer downvoted"
+msgstr ""
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_gen_answer_flagged
+msgid "Answer flagged"
+msgstr "Trả lời được gắn cờ"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_answer
+msgid "Answer questions"
+msgstr "Trả lời các câu hỏi"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_gen_answer_upvote
+msgid "Answer upvoted"
+msgstr ""
+
+#. module: website_forum
+#: model:gamification.badge,description:website_forum.badge_a_4
+msgid "Answer voted up 15 times"
+msgstr ""
+
+#. module: website_forum
+#: model:gamification.badge,description:website_forum.badge_a_2
+msgid "Answer voted up 4 times"
+msgstr ""
+
+#. module: website_forum
+#: model:gamification.badge,description:website_forum.badge_a_3
+msgid "Answer voted up 6 times"
+msgstr ""
+
+#. module: website_forum
+#: model:gamification.badge,description:website_forum.badge_a_5
+msgid "Answer was accepted with 3 or more votes"
+msgstr ""
+
+#. module: website_forum
+#: selection:forum.forum,default_order:0
+msgid "Answered"
+msgstr "Đã trả lời"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.view_forum_post_search
+msgid "Answered Questions"
+msgstr ""
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.view_forum_post_form
+msgid "Answered by"
+msgstr "Trả lời bởi"
+
+#. module: website_forum
+#: model:gamification.badge,description:website_forum.badge_a_8
+msgid "Answered own question with at least 4 up votes"
+msgstr "Answered own question with at least 4 up votes"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_child_ids
+#: model:ir.ui.view,arch_db:website_forum.user_detail_full
+#: model:ir.ui.view,arch_db:website_forum.view_forum_post_form
+#: model:ir.ui.view,arch_db:website_forum.view_forum_post_search
+msgid "Answers"
+msgstr "Answers"
+
+#. module: website_forum
+#: selection:forum.post,post_type:0
+msgid "Article"
+msgstr "Article"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.new_question
+msgid "Ask Your Question"
+msgstr "Ask Your Question"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:53
+#: model:ir.ui.view,arch_db:website_forum.header
+#, python-format
+msgid "Ask a Question"
+msgstr "Đặt một Câu hỏi"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_ask
+msgid "Ask questions"
+msgstr "Ask questions"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_post
+msgid "Ask questions without validation"
+msgstr "Ask questions without validation"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:56
+#, python-format
+msgid "Ask the question in this forum by clicking on the button."
+msgstr "Ask the question in this forum by clicking on the button."
+
+#. module: website_forum
+#: model:gamification.badge,description:website_forum.badge_26
+msgid "Asked a question and accepted an answer"
+msgstr "Asked a question and accepted an answer"
+
+#. module: website_forum
+#: model:gamification.badge,description:website_forum.badge_q_1
+msgid "Asked a question with at least 150 views"
+msgstr "Asked a question with at least 150 views"
+
+#. module: website_forum
+#: model:gamification.badge,description:website_forum.badge_q_2
+msgid "Asked a question with at least 250 views"
+msgstr "Asked a question with at least 250 views"
+
+#. module: website_forum
+#: model:gamification.badge,description:website_forum.badge_q_3
+msgid "Asked a question with at least 500 views"
+msgstr "Asked a question with at least 500 views"
+
+#. module: website_forum
+#: model:gamification.badge,description:website_forum.badge_q_7
+msgid "Asked first question with at least one up vote"
+msgstr "Asked first question with at least one up vote"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_create_date
+msgid "Asked on"
+msgstr "Asked on"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "Asked:"
+msgstr "Asked:"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_gen_question_new
+msgid "Asking a question"
+msgstr "Asking a question"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.view_forum_post_search
+msgid "Author"
+msgstr "Tác giả"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_p_1
+msgid "Autobiographer"
+msgstr "Người viết tự truyện"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.new_question
+msgid "Avoid unnecessary introductions (Hi,... Please... Thanks...),"
+msgstr "Avoid unnecessary introductions (Hi,... Please... Thanks...),"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "Back to"
+msgstr "Quay về"
+
+#. module: website_forum
+#: code:addons/website_forum/controllers/main.py:321
+#: code:addons/website_forum/controllers/main.py:384
+#, python-format
+msgid "Bad Request"
+msgstr "Bad Request"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.badge_user
+msgid "Badge \""
+msgstr "Huy chương \""
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_badge_ids
+#: model:ir.ui.view,arch_db:website_forum.badge
+#: model:ir.ui.view,arch_db:website_forum.header
+#: model:ir.ui.view,arch_db:website_forum.user_detail_full
+msgid "Badges"
+msgstr "Huy chương"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_bank_account_count
+msgid "Bank"
+msgstr "Ngân hàng"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.badge
+msgid "Besides gaining reputation with your questions and answers,\n"
+"            you receive badges for being especially helpful. Badges\n"
+"            appear on your profile page, and your posts."
+msgstr "Bên cạnh việc gia tăng uy tín bằng các câu hỏi và câu trả lời,\n"
+"            bạn nhận được các huy chương vì sự giúp đỡ đặc biệt đối với cộng đồng.\n"
+"            Các huy chương sẽ được xuất hiện ở trang hồ sơ cũng như bài viết của bạn."
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.edit_profile
+msgid "Biography"
+msgstr "Tiểu sử"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_bronze_badge
+msgid "Bronze badges count"
+msgstr "Bronze badges count"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_bump_date
+msgid "Bumped on"
+msgstr "Bumped on"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/xml/website_forum_share_templates.xml:34
+#, python-format
+msgid "By sharing you answer, you will get additionnal"
+msgstr "By sharing you answer, you will get additionnal"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_can_accept
+msgid "Can Accept"
+msgstr "Có thể Chấp thuận"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_can_answer
+msgid "Can Answer"
+msgstr "Có thể Trả lời"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_can_ask
+msgid "Can Ask"
+msgstr "Có thể Hỏi"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_can_post
+msgid "Can Automatically be Validated"
+msgstr "Can Automatically be Validated"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_can_close
+msgid "Can Close"
+msgstr "Có thể Đóng"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_can_comment
+msgid "Can Comment"
+msgstr "Có thể Bình luận"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_can_comment_convert
+msgid "Can Convert to Comment"
+msgstr "Có thể Chuyển đổi thành Bình luận"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_can_downvote
+msgid "Can Downvote"
+msgstr "Can Downvote"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_can_edit
+msgid "Can Edit"
+msgstr "Có thể Sửa"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_can_flag
+msgid "Can Flag"
+msgstr "Có thể gắn cờ"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_can_moderate
+msgid "Can Moderate"
+msgstr "Có thể Điều chỉnh"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_can_unlink
+msgid "Can Unlink"
+msgstr "Can Unlink"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_can_upvote
+msgid "Can Upvote"
+msgstr "Can Upvote"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_can_view
+msgid "Can View"
+msgstr "Có thể Xem"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_retag
+msgid "Change question tags"
+msgstr "Change question tags"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.user_badges
+msgid "Check available badges"
+msgstr "Kiểm tra các huy chương khả dụng"
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_forum_forum_allow_bump
+msgid "Check this box to display a popup for posts older than 10 days without any given answer. The popup will offer to share it on social networks. When shared, a question is bumped at the top of the forum."
+msgstr "Check this box to display a popup for posts older than 10 days without any given answer. The popup will offer to share it on social networks. When shared, a question is bumped at the top of the forum."
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_p_4
+#: model:gamification.challenge,name:website_forum.challenge_chief_commentator
+msgid "Chief Commentator"
+msgstr "Chief Commentator"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.edit_profile
+msgid "City"
+msgstr "Thành phố"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:44
+#, python-format
+msgid "Click <em>Continue</em> to create the forum."
+msgstr "Click <em>Continue</em> to create the forum."
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:117
+#, python-format
+msgid "Click here to accept this answer."
+msgstr "Click here to accept this answer."
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "Click here to send a verification email allowing you to participate to the forum."
+msgstr "Bấm vào đây để gửi một email thẩm định cho phép bạn tham gia vào Diễn đàn."
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.new_question
+msgid "Click to get bad question samples"
+msgstr "Click to get bad question samples"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.new_question
+msgid "Click to get good question titles"
+msgstr "Click to get good question titles"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:105
+#, python-format
+msgid "Click to post your answer."
+msgstr "Click to post your answer."
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:85
+#, python-format
+msgid "Click to post your question."
+msgstr "Bấm để đăng câu hỏi của bạn."
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/xml/website_forum_share_templates.xml:46
+#: selection:forum.post,state:0
+#, python-format
+msgid "Close"
+msgstr "Đóng"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:123
+#, python-format
+msgid "Close Tutorial"
+msgstr "Close Tutorial"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_close_all
+msgid "Close all posts"
+msgstr "Đóng tất cả các bài"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_close_own
+msgid "Close own posts"
+msgstr "Đóng bài của mình"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_closed_uid
+msgid "Closed by"
+msgstr "Được đóng bởi"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_closed_date
+msgid "Closed on"
+msgstr "Được đóng vào"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_reason_name
+msgid "Closing Reason"
+msgstr "Lý do đóng"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.display_post_answer
+#: model:ir.ui.view,arch_db:website_forum.display_post_question_block
+#: model:ir.ui.view,arch_db:website_forum.moderation_display_post_answer
+#: model:ir.ui.view,arch_db:website_forum.post_answers
+#: model:ir.ui.view,arch_db:website_forum.post_description_full
+msgid "Comment"
+msgstr "Bình luận"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_comment_all
+msgid "Comment all posts"
+msgstr "Bình luận tất cả các bài"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_comment_own
+msgid "Comment own posts"
+msgstr "Bình luận bài của mình"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.post_comment
+msgid "Comment this post..."
+msgstr "Comment this post..."
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_p_2
+#: model:gamification.challenge,name:website_forum.challenge_commentator
+#: model:gamification.goal.definition,name:website_forum.definition_commentator
+msgid "Commentator"
+msgstr "Commentator"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.display_post_answer
+#: model:ir.ui.view,arch_db:website_forum.moderation_display_post_answer
+msgid "Comments"
+msgstr "Comments"
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_forum_post_website_message_ids
+msgid "Comments on forum post"
+msgstr "Comments on forum post"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_ref_company_ids
+msgid "Companies that refers to partner"
+msgstr "Companies that refers to partner"
+
+#. module: website_forum
+#: model:gamification.challenge,name:website_forum.challenge_configure_profile
+msgid "Complete own biography"
+msgstr "Complete own biography"
+
+#. module: website_forum
+#: model:gamification.badge,description:website_forum.badge_p_1
+#: model:gamification.goal.definition,name:website_forum.definition_configure_profile
+msgid "Completed own biography"
+msgstr "Đã hoàn thành tiểu sử của mình"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:120
+#, python-format
+msgid "Congratulations"
+msgstr "Congratulations"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:122
+#, python-format
+msgid "Congratulations! You just created and post your first question and answer."
+msgstr "Congratulations! You just created and post your first question and answer."
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "Congratulations! Your email has just been validated. You may now participate to our forums."
+msgstr "Congratulations! Your email has just been validated. You may now participate to our forums."
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_content
+#: model:ir.ui.view,arch_db:website_forum.view_forum_post_search
+msgid "Content"
+msgstr "Nội dung"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:50
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:91
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:111
+#, python-format
+msgid "Continue"
+msgstr "Tiếp tục"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_contract_ids
+#: model:ir.model.fields,field_description:website_forum.field_res_users_contracts_count
+msgid "Contracts"
+msgstr "Hợp đồng"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_comment_convert_all
+msgid "Convert all answers to comments and vice versa"
+msgstr "Chuyển tất cả câu trả lời thành bình luận và ngược lại"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_karma_accept
+msgid "Convert comment to answer"
+msgstr "Convert comment to answer"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_comment_convert_own
+msgid "Convert own answers to comments and vice versa"
+msgstr "Convert own answers to comments and vice versa"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_is_correct
+msgid "Correct"
+msgstr "Correct"
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_forum_post_is_correct
+msgid "Correct answer or answer accepted"
+msgstr "Correct answer or answer accepted"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.edit_profile
+msgid "Country"
+msgstr "Quốc gia"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.edit_profile
+msgid "Country..."
+msgstr "Quốc gia..."
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_vote_create_date
+msgid "Create Date"
+msgstr "Create Date"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:40
+#, python-format
+msgid "Create Forum"
+msgstr "Create Forum"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:14
+#, python-format
+msgid "Create a Question!"
+msgstr "Create a Question!"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:11
+#, python-format
+msgid "Create a question"
+msgstr "Create a question"
+
+#. module: website_forum
+#: model:gamification.badge,description:website_forum.badge_32
+msgid "Created a tag used by 15 questions"
+msgstr "Created a tag used by 15 questions"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_create_uid
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_create_uid
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_reason_create_uid
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_vote_create_uid
+#: model:ir.model.fields,field_description:website_forum.field_forum_tag_create_uid
+msgid "Created by"
+msgstr "Được tạo bởi"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_create_date
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_reason_create_date
+#: model:ir.model.fields,field_description:website_forum.field_forum_tag_create_date
+msgid "Created on"
+msgstr "Được tạo vào"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_q_4
+#: model:gamification.challenge,name:website_forum.challenge_favorite_question_1
+msgid "Credible Question"
+msgstr "Credible Question"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_5
+#: model:gamification.challenge,name:website_forum.challenge_critic
+#: model:gamification.goal.definition,name:website_forum.definition_critic
+msgid "Critic"
+msgstr "Critic"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_currency_id
+msgid "Currency"
+msgstr "Tiên tệ"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_property_payment_term_id
+msgid "Customer Payment Term"
+msgstr "Điều khoản thanh toán của Khách hàng"
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_forum_forum_message_last_post
+#: model:ir.model.fields,help:website_forum.field_forum_post_message_last_post
+msgid "Date of the last message posted on the record."
+msgstr "Ngày của thông điệp gần nhất được ghi nhận trên một bản ghi"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_default_order
+msgid "Default Order"
+msgstr "Default Order"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_default_post_type
+msgid "Default Post"
+msgstr "Kiểu bài mặc định"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_unlink_all
+msgid "Delete all posts"
+msgstr "Xoá tất cả các bài"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_unlink_own
+msgid "Delete own posts"
+msgstr "Xoá bài của chính mình"
+
+#. module: website_forum
+#: model:gamification.badge,description:website_forum.badge_23
+msgid "Deleted own post with 3 or more downvotes"
+msgstr "Deleted own post with 3 or more downvotes"
+
+#. module: website_forum
+#: model:gamification.badge,description:website_forum.badge_6
+msgid "Deleted own post with 3 or more upvotes"
+msgstr "Deleted own post with 3 or more upvotes"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_description
+msgid "Description"
+msgstr "Mô tả"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "Design Welcome Message"
+msgstr "Thiết kế Thông điệp Chào mừng"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_6
+#: model:gamification.challenge,name:website_forum.challenge_disciplined
+#: model:gamification.goal.definition,name:website_forum.definition_disciplined
+msgid "Disciplined"
+msgstr "Disciplined"
+
+#. module: website_forum
+#: selection:forum.forum,default_post_type:0
+#: selection:forum.post,post_type:0
+msgid "Discussion"
+msgstr "Thảo luận"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_allow_discussion
+msgid "Discussions"
+msgstr "Thảo luận"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_display_name
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_display_name
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_reason_display_name
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_vote_display_name
+#: model:ir.model.fields,field_description:website_forum.field_forum_tag_display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_user_bio
+msgid "Display detailed user biography"
+msgstr "Display detailed user biography"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_downvote
+msgid "Downvote"
+msgstr "Downvote"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.edit_post
+msgid "Edit"
+msgstr "Sửa"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.edit_profile
+msgid "Edit Profile"
+msgstr "Sửa Hồ sơ"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.user_detail_full
+msgid "Edit Your Bio"
+msgstr "Sửa Tiểu sử của bạn"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.post_description_full
+msgid "Edit Your Previous Answer"
+msgstr "Sửa câu trả lời trước của bạn"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_edit_all
+msgid "Edit all posts"
+msgstr "Sửa tất cả các bài"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_edit_own
+msgid "Edit own posts"
+msgstr "Sửa bài của chính mình"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.edit_post
+msgid "Edit reply"
+msgstr "Sửa phản hồi"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.new_link
+msgid "Edit your Link"
+msgstr "Sửa Link của bạn"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.edit_post
+msgid "Edit your Post"
+msgstr "Sửa Bài của bạn"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_7
+#: model:gamification.challenge,name:website_forum.challenge_editor
+#: model:gamification.goal.definition,name:website_forum.definition_editor
+msgid "Editor"
+msgstr "Editor"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_editor
+msgid "Editor Features: image and links"
+msgstr "Editor Features: image and links"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.edit_profile
+msgid "Email"
+msgstr "Tên đăng nhập / Email"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_a_5
+#: model:gamification.challenge,name:website_forum.challenge_enlightened
+#: model:gamification.goal.definition,name:website_forum.definition_enlightened
+msgid "Enlightened"
+msgstr "Enlightened"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:37
+#, python-format
+msgid "Enter a name for your new forum then click 'Continue'."
+msgstr "Enter a name for your new forum then click 'Continue'."
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_q_3
+#: model:gamification.challenge,name:website_forum.challenge_famous_question
+msgid "Famous Question"
+msgstr "Famous Question"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_favourite_count
+msgid "Favorite Count"
+msgstr "Favorite Count"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_q_5
+#: model:gamification.challenge,name:website_forum.challenge_favorite_question_5
+msgid "Favorite Question"
+msgstr "Favorite Question"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_favourite_ids
+msgid "Favourite"
+msgstr "Favourite"
+
+#. module: website_forum
+#: model:gamification.goal.definition,name:website_forum.definition_favorite_question_1
+msgid "Favourite Question (1)"
+msgstr "Favourite Question (1)"
+
+#. module: website_forum
+#: model:gamification.goal.definition,name:website_forum.definition_stellar_question_25
+msgid "Favourite Question (25)"
+msgstr "Favourite Question (25)"
+
+#. module: website_forum
+#: model:gamification.goal.definition,name:website_forum.definition_favorite_question_5
+msgid "Favourite Question (5)"
+msgstr "Favourite Question (5)"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.user_detail_full
+msgid "Favourite Questions"
+msgstr "Favourite Questions"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.forum_index
+msgid "Filter on"
+msgstr "Filter on"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_relevancy_post_vote
+msgid "First Relevance Parameter"
+msgstr "First Relevance Parameter"
+
+#. module: website_forum
+#: model:gamification.badge,description:website_forum.badge_5
+msgid "First downvote"
+msgstr "First downvote"
+
+#. module: website_forum
+#: model:gamification.badge,description:website_forum.badge_7
+msgid "First edit"
+msgstr "First edit"
+
+#. module: website_forum
+#: model:gamification.badge,description:website_forum.badge_31
+msgid "First upvote"
+msgstr "First upvote"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_property_account_position_id
+msgid "Fiscal Position"
+msgstr "Vị thế Tài khoá"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_flag
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_karma_flag
+msgid "Flag a post as offensive"
+msgstr "Gắn cờ một bài như là có tính công kích"
+
+#. module: website_forum
+#: selection:forum.post,state:0
+#: model:ir.ui.view,arch_db:website_forum.moderation_queue
+msgid "Flagged"
+msgstr "Được gắn cờ"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_flag_user_id
+msgid "Flagged by"
+msgstr "Được gắn cờ bởi"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.forum_index
+msgid "Followed"
+msgstr "Lượt dõi theo"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.user_detail_full
+msgid "Followed Questions"
+msgstr "Câu hỏi được dõi theo"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_message_follower_ids
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_message_follower_ids
+msgid "Followers"
+msgstr "Người dõi theo"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_message_channel_ids
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_message_channel_ids
+msgid "Followers (Channels)"
+msgstr "Kênh dõi theo"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_message_partner_ids
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Người dõi theo"
+
+#. module: website_forum
+#: model:forum.forum,faq:website_forum.forum_help
+msgid "For example, if you ask an interesting question or give a helpful answer, your\n"
+"    input will be upvoted. On the other hand if the answer is misleading - it will\n"
+"    be downvoted. Each vote in favor will generate 10 points, each vote against\n"
+"    will subtract 10 points. There is a limit of 200 points that can be accumulated\n"
+"    for a question or answer per day. The table given at the end explains reputation point\n"
+"    requirements for each type of moderation task."
+msgstr "For example, if you ask an interesting question or give a helpful answer, your\n"
+"    input will be upvoted. On the other hand if the answer is misleading - it will\n"
+"    be downvoted. Each vote in favor will generate 10 points, each vote against\n"
+"    will subtract 10 points. There is a limit of 200 points that can be accumulated\n"
+"    for a question or answer per day. The table given at the end explains reputation point\n"
+"    requirements for each type of moderation task."
+
+#. module: website_forum
+#: model:ir.actions.act_url,name:website_forum.action_open_forum
+#: model:ir.model,name:website_forum.model_forum_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_forum_id
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_vote_forum_id
+#: model:ir.model.fields,field_description:website_forum.field_forum_tag_forum_id
+#: model:ir.ui.menu,name:website_forum.menu_website_forum
+#: model:ir.ui.view,arch_db:website_forum.view_forum_forum_form
+#: model:ir.ui.view,arch_db:website_forum.view_forum_post_search
+#: model:website.menu,name:website_forum.menu_questions
+msgid "Forum"
+msgstr "Diễn đàn"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_gamification_badge_level
+#: model:ir.model.fields,field_description:website_forum.field_gamification_badge_user_level
+msgid "Forum Badge Level"
+msgstr "Cấp độ Huân chương Diễn đàn"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.view_users_form_forum
+msgid "Forum Karma"
+msgstr "Karma Diễn đàn"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:33
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_name
+#, python-format
+msgid "Forum Name"
+msgstr "Forum Name"
+
+#. module: website_forum
+#: model:ir.model,name:website_forum.model_forum_post
+#: model:ir.ui.view,arch_db:website_forum.view_forum_post_form
+msgid "Forum Post"
+msgstr "Bài viết"
+
+#. module: website_forum
+#: model:ir.actions.act_window,name:website_forum.action_forum_post
+#: model:ir.ui.view,arch_db:website_forum.view_forum_post_list
+msgid "Forum Posts"
+msgstr "Bài viết"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "Forum Settings"
+msgstr "Forum Settings"
+
+#. module: website_forum
+#: model:ir.model,name:website_forum.model_forum_tag
+msgid "Forum Tag"
+msgstr "Forum Tag"
+
+#. module: website_forum
+#: model:ir.actions.act_window,name:website_forum.action_forum_forum
+#: model:ir.ui.menu,name:website_forum.menu_forum
+#: model:ir.ui.view,arch_db:website_forum.header_footer_custom
+#: model:ir.ui.view,arch_db:website_forum.view_forum_forum_list
+msgid "Forums"
+msgstr "Diễn đàn"
+
+#. module: website_forum
+#: model:ir.model,name:website_forum.model_gamification_badge
+msgid "Gamification badge"
+msgstr "Huy chương Gamification"
+
+#. module: website_forum
+#: model:ir.model,name:website_forum.model_gamification_challenge
+msgid "Gamification challenge"
+msgstr "Thử thách Gamification"
+
+#. module: website_forum
+#: model:ir.model,name:website_forum.model_gamification_badge_user
+msgid "Gamification user badge"
+msgstr "Gamification user badge"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:74
+#, python-format
+msgid "Give Tag"
+msgstr "Give Tag"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:63
+#, python-format
+msgid "Give your question title."
+msgstr "Give your question title."
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_gold_badge
+msgid "Gold badges count"
+msgstr "Gold badges count"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_a_3
+#: model:gamification.challenge,name:website_forum.challenge_good_answer
+msgid "Good Answer"
+msgstr "Câu trả lời hay"
+
+#. module: website_forum
+#: model:gamification.goal.definition,name:website_forum.definition_good_answer
+msgid "Good Answer (6)"
+msgstr "Câu trả lời hay (6)"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_q_9
+#: model:gamification.challenge,name:website_forum.challenge_good_question
+msgid "Good Question"
+msgstr "Câu hỏi hay"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.view_forum_post_graph
+msgid "Graph of Posts"
+msgstr "Graph of Posts"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_a_4
+#: model:gamification.challenge,name:website_forum.challenge_great_answer
+msgid "Great Answer"
+msgstr "Câu trả lời Tuyệt vời"
+
+#. module: website_forum
+#: model:gamification.goal.definition,name:website_forum.definition_great_answer
+msgid "Great Answer (15)"
+msgstr "Câu trả lời Tuyệt vời (15)"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_q_10
+#: model:gamification.challenge,name:website_forum.challenge_great_question
+msgid "Great Question"
+msgstr "Câu hỏi Tuyệt vời"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.view_forum_post_search
+msgid "Group By"
+msgstr "Group By"
+
+#. module: website_forum
+#: model:forum.forum,faq:website_forum.forum_help
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_faq
+msgid "Guidelines"
+msgstr "Hướng dẫn"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_a_6
+#: model:gamification.challenge,name:website_forum.challenge_guru
+msgid "Guru"
+msgstr "Guru"
+
+#. module: website_forum
+#: model:gamification.goal.definition,name:website_forum.definition_guru
+msgid "Guru (15)"
+msgstr "Guru (15)"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_uid_has_answered
+msgid "Has Answered"
+msgstr "Has Answered"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_has_unreconciled_entries
+msgid "Has unreconciled entries"
+msgstr "Has unreconciled entries"
+
+#. module: website_forum
+#: model:forum.forum,name:website_forum.forum_help
+msgid "Help"
+msgstr "Trợ giúp"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_id
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_id
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_reason_id
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_vote_id
+#: model:ir.model.fields,field_description:website_forum.field_forum_tag_id
+msgid "ID"
+msgstr "ID"
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_forum_forum_message_unread
+#: model:ir.model.fields,help:website_forum.field_forum_post_message_unread
+msgid "If checked new messages require your attention."
+msgstr "Nếu đánh dấu kiểm, các thông điệp mới yêu cầu sự có mặt của bạn."
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_forum_forum_message_needaction
+#: model:ir.model.fields,help:website_forum.field_forum_post_message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Nếu được đánh dấu, thông điệp mới sẽ yêu cầu sự có mặt của bạn."
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_forum_forum_karma_dofollow
+msgid "If the author has not enough karma, a nofollow attribute is added to links"
+msgstr "If the author has not enough karma, a nofollow attribute is added to links"
+
+#. module: website_forum
+#: model:forum.forum,faq:website_forum.forum_help
+msgid "If this approach is not for you, please respect the community and use Google+\n"
+"    communities instead."
+msgstr "If this approach is not for you, please respect the community and use Google+\n"
+"    communities instead."
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.close_post
+msgid "If you close this post, it will be hidden for most users. Only\n"
+"            users having a high karma can see closed posts to moderate\n"
+"            them."
+msgstr "If you close this post, it will be hidden for most users. Only\n"
+"            users having a high karma can see closed posts to moderate\n"
+"            them."
+
+#. module: website_forum
+#: model:forum.forum,faq:website_forum.forum_help
+msgid "If you fit in one of these example or if your motivation for asking the\n"
+"    question is “I would like to participate in a discussion about ______”, then\n"
+"    you should not be asking here but on our mailing lists.\n"
+"    However, if your motivation is “I would like others to explain ______ to me”,\n"
+"    then you are probably OK."
+msgstr "If you fit in one of these example or if your motivation for asking the\n"
+"    question is “I would like to participate in a discussion about ______”, then\n"
+"    you should not be asking here but on our mailing lists.\n"
+"    However, if your motivation is “I would like others to explain ______ to me”,\n"
+"    then you are probably OK."
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.close_post
+msgid "If you mark this post as offensive, it will be hidden for most users. Only\n"
+"            users having a high karma can see offensive posts to moderate\n"
+"            them."
+msgstr "If you mark this post as offensive, it will be hidden for most users. Only\n"
+"            users having a high karma can see offensive posts to moderate\n"
+"            them."
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:78
+#, python-format
+msgid "Insert tags related to your question."
+msgstr "Insert tags related to your question."
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_invoice_ids
+msgid "Invoices"
+msgstr "Hoá đơn"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_user_favourite
+msgid "Is Favourite"
+msgstr "Is Favourite"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_message_is_follower
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_message_is_follower
+msgid "Is Follower"
+msgstr "Là một người dõi theo"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_has_validated_answer
+msgid "Is answered"
+msgstr "Is answered"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_can_display_biography
+msgid "Is the author's biography visible from his post"
+msgstr "Is the author's biography visible from his post"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "It appears your email has not been verified."
+msgstr "Có vẻ như email của bạn chưa được thẩm định."
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_issued_total
+#: model:ir.model.fields,field_description:website_forum.field_res_users_journal_item_count
+msgid "Journal Items"
+msgstr "Phát sinh KT"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_karma
+#: model:ir.ui.view,arch_db:website_forum.user_detail_full
+msgid "Karma"
+msgstr "Karma"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.view_forum_forum_form
+msgid "Karma Gains"
+msgstr "Karma Gains"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.view_forum_forum_form
+msgid "Karma Related Rights"
+msgstr "Karma Related Rights"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_karma_close
+msgid "Karma to close"
+msgstr "Karma to close"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_karma_comment
+msgid "Karma to comment"
+msgstr "Karma to comment"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_karma_comment_convert
+msgid "Karma to convert comment to answer"
+msgstr "Karma to convert comment to answer"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_karma_edit
+msgid "Karma to edit"
+msgstr "Karma to edit"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_karma_unlink
+msgid "Karma to unlink"
+msgstr "Karma to unlink"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "Keep Informed"
+msgstr "Giữ liên lạc"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_message_last_post
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_message_last_post
+msgid "Last Message Date"
+msgstr "Ngày thông điệp cuối cùng"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum___last_update
+#: model:ir.model.fields,field_description:website_forum.field_forum_post___last_update
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_reason___last_update
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_vote___last_update
+#: model:ir.model.fields,field_description:website_forum.field_forum_tag___last_update
+msgid "Last Modified on"
+msgstr "Sửa lần cuối"
+
+#. module: website_forum
+#: selection:forum.forum,default_order:0
+msgid "Last Updated"
+msgstr "Last Updated"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_write_uid
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_reason_write_uid
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_vote_write_uid
+#: model:ir.model.fields,field_description:website_forum.field_forum_tag_write_uid
+msgid "Last Updated by"
+msgstr "Last Updated by"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_write_date
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_reason_write_date
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_vote_write_date
+#: model:ir.model.fields,field_description:website_forum.field_forum_tag_write_date
+msgid "Last Updated on"
+msgstr "Cập nhật lần cuối"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.forum_index
+msgid "Last activity date"
+msgstr "Ngày hoạt động gần nhất"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_calendar_last_notif_ack
+msgid "Last notification marked as read from base Calendar"
+msgstr "Thông báo gần nhất được đánh dấu là đã đọc"
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_res_users_last_time_entries_checked
+msgid "Last time the invoices & payments matching was performed for this partner. It is set either if there's not at least an unreconciled debit and an unreconciled credit or if you click the \"Done\" button."
+msgstr ""
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "Last updated:"
+msgstr "Cập nhật cuối:"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_last_time_entries_checked
+msgid "Latest Invoices & Payments Matching Date"
+msgstr "Ngày đối chiếu Hoá đơn & Thanh toán gần nhất"
+
+#. module: website_forum
+#: model:gamification.badge,description:website_forum.badge_25
+msgid "Left 10 answers with score of 10 or more"
+msgstr ""
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:15
+#, python-format
+msgid "Let's go through the first steps to create a new question."
+msgstr "Hãy đi qua những bước đầu tiên để tạo mới một câu hỏi."
+
+#. module: website_forum
+#: selection:forum.forum,default_post_type:0
+msgid "Link"
+msgstr "Liên kết"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_allow_link
+#: model:ir.ui.view,arch_db:website_forum.forum_index
+msgid "Links"
+msgstr ""
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_message_ids
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_message_ids
+msgid "Messages"
+msgstr "Thông điệp"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_moderate
+msgid "Moderate posts"
+msgstr "Điều chỉnh bài"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "Moderation Tools"
+msgstr "Công cụ điều chỉnh"
+
+#. module: website_forum
+#: model:forum.forum,faq:website_forum.forum_help
+msgid "More over:"
+msgstr "Thêm nữa:"
+
+#. module: website_forum
+#: selection:forum.forum,default_order:0
+msgid "Most Voted"
+msgstr "Bầu chọn nhiều nhất"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.forum_index
+msgid "Most answered"
+msgstr "Trả lời nhiều nhất"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.forum_index
+msgid "Most voted"
+msgstr "Bầu chọn nhiều nhất"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_user_vote
+msgid "My Vote"
+msgstr "Bầu chọn của tôi"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_tag_name
+#: model:ir.ui.view,arch_db:website_forum.view_forum_post_form
+msgid "Name"
+msgstr "Tên"
+
+#. module: website_forum
+#: model:mail.message.subtype,description:website_forum.mt_answer_new
+#: model:mail.message.subtype,name:website_forum.mt_answer_new
+#: model:mail.message.subtype,name:website_forum.mt_forum_answer_new
+msgid "New Answer"
+msgstr "Đáp án mới"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "New Discussion"
+msgstr "Thảo luận mới"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_forum.editor.js:14
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:26
+#: model:ir.ui.view,arch_db:website_forum.content_new_forum
+#, python-format
+msgid "New Forum"
+msgstr "Diễn đàn Mới"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:47
+#, python-format
+msgid "New Forum Created"
+msgstr "New Forum Created"
+
+#. module: website_forum
+#: model:mail.message.subtype,description:website_forum.mt_question_new
+#: model:mail.message.subtype,name:website_forum.mt_forum_question_new
+#: model:mail.message.subtype,name:website_forum.mt_question_new
+msgid "New Question"
+msgstr "Câu hỏi mới"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:88
+#, python-format
+msgid "New Question Created"
+msgstr "Câu hỏi mới được tạo"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.new_discussion
+msgid "New Topic"
+msgstr "Chủ đề mới"
+
+#. module: website_forum
+#: selection:forum.forum,default_order:0
+#: model:ir.ui.view,arch_db:website_forum.forum_index
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "Newest"
+msgstr "Mới nhất"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_a_2
+#: model:gamification.challenge,name:website_forum.challenge_nice_answer
+msgid "Nice Answer"
+msgstr "Câu trả lời hay"
+
+#. module: website_forum
+#: model:gamification.goal.definition,name:website_forum.definition_nice_answer
+msgid "Nice Answer (4)"
+msgstr "Câu trả lời hay (4)"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_q_8
+#: model:gamification.challenge,name:website_forum.challenge_nice_question
+msgid "Nice Question"
+msgstr "Câu hỏi tốt"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_dofollow
+msgid "Nofollow links"
+msgstr "Nofollow links"
+
+#. module: website_forum
+#: code:addons/website_forum/models/forum.py:817
+#: code:addons/website_forum/models/forum.py:837
+#, python-format
+msgid "Not allowed to vote for its own post"
+msgstr "Not allowed to vote for its own post"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_q_2
+#: model:gamification.challenge,name:website_forum.challenge_notable_question
+msgid "Notable Question"
+msgstr "Câu hỏi đáng chú ý"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_message_needaction_counter
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_message_needaction_counter
+msgid "Number of Actions"
+msgstr "Số lượng hành động"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_tag_posts_count
+msgid "Number of Posts"
+msgstr "Số bài"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_views
+msgid "Number of Views"
+msgstr "Lượt xem"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_child_count
+msgid "Number of answers"
+msgstr "Number of answers"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_count_flagged_posts
+msgid "Number of flagged posts"
+msgstr "Number of flagged posts"
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_forum_forum_message_needaction_counter
+#: model:ir.model.fields,help:website_forum.field_forum_post_message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "Number of messages which requires an action"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_count_posts_waiting_validation
+msgid "Number of posts waiting for validation"
+msgstr "Number of posts waiting for validation"
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_forum_forum_message_unread_counter
+#: model:ir.model.fields,help:website_forum.field_forum_post_message_unread_counter
+msgid "Number of unread messages"
+msgstr "Số các thông điệp chưa đọc"
+
+#. module: website_forum
+#: selection:forum.post,state:0
+#: model:ir.ui.view,arch_db:website_forum.moderation_queue
+msgid "Offensive"
+msgstr "Offensive"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.post_answers
+msgid "On"
+msgstr "On"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/xml/website_forum_share_templates.xml:29
+#, python-format
+msgid "On average,"
+msgstr "On average,"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.view_forum_forum_form
+msgid "Options"
+msgstr "Tùy chọn"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.view_forum_forum_form
+msgid "Orders"
+msgstr "Đơn hàng"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.forum_all
+msgid "Our forums"
+msgstr "Our forums"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_debit_limit
+msgid "Payable Limit"
+msgstr "Hạn mức phải trả"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_23
+#: model:gamification.challenge,name:website_forum.challenge_peer_pressure
+#: model:gamification.goal.definition,name:website_forum.definition_peer_pressure
+msgid "Peer Pressure"
+msgstr "Peer Pressure"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.moderation_queue
+msgid "Pending"
+msgstr "Đang treo"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "People"
+msgstr "Thành viên"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_plain_content
+msgid "Plain Content"
+msgstr "Plain Content"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.edit_post
+msgid "Please enter a descriptive question (should finish by a '?')"
+msgstr "Please enter a descriptive question (should finish by a '?')"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.edit_profile
+msgid "Please enter a valid email address in order to receive notifications from answers or comments."
+msgstr "Please enter a valid email address in order to receive notifications from answers or comments."
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_q_1
+#: model:gamification.challenge,name:website_forum.challenge_popular_question
+msgid "Popular Question"
+msgstr "Popular Question"
+
+#. module: website_forum
+#: model:gamification.goal.definition,name:website_forum.definition_popular_question
+msgid "Popular Question (150)"
+msgstr "Popular Question (150)"
+
+#. module: website_forum
+#: model:gamification.goal.definition,name:website_forum.definition_notable_question
+msgid "Popular Question (250)"
+msgstr "Popular Question (250)"
+
+#. module: website_forum
+#: model:gamification.goal.definition,name:website_forum.definition_famous_question
+msgid "Popular Question (500)"
+msgstr "Popular Question (500)"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_vote_post_id
+#: model:ir.ui.view,arch_db:website_forum.close_post
+#: model:ir.ui.view,arch_db:website_forum.new_link
+#: model:ir.ui.view,arch_db:website_forum.post_comment
+#: model:ir.ui.view,arch_db:website_forum.view_forum_post_search
+msgid "Post"
+msgstr "Post"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:101
+#: model:ir.ui.view,arch_db:website_forum.post_answer
+#, python-format
+msgid "Post Answer"
+msgstr "Post Answer"
+
+#. module: website_forum
+#: model:ir.model,name:website_forum.model_forum_post_reason
+msgid "Post Closing Reason"
+msgstr "Post Closing Reason"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.post_reply
+msgid "Post Comment"
+msgstr "Post Comment"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_website_message_ids
+msgid "Post Messages"
+msgstr "Post Messages"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:81
+#, python-format
+msgid "Post Question"
+msgstr "Đăng câu hỏi"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.new_link
+msgid "Post Title"
+msgstr "Tiêu đề bài"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.view_forum_forum_form
+msgid "Post Types"
+msgstr "Kiểu bài"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.new_question
+msgid "Post Your Question"
+msgstr "Đăng câu hỏi của bạn"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.new_discussion
+msgid "Post Your Topic"
+msgstr "Đăng chủ đề của bạn"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.close_post
+msgid "Post:"
+msgstr "Post:"
+
+#. module: website_forum
+#: model:gamification.badge,description:website_forum.badge_p_2
+msgid "Posted 10 comments"
+msgstr "Posted 10 comments"
+
+#. module: website_forum
+#: model:gamification.badge,description:website_forum.badge_p_4
+msgid "Posted 100 comments"
+msgstr "Posted 100 comments"
+
+#. module: website_forum
+#: code:addons/website_forum/models/forum.py:432
+#, python-format
+msgid "Posting answer on a [Deleted] or [Closed] question is not possible"
+msgstr "Gửi câu trả lời trong một câu hỏi [Bị xoá] hoặc [Đóng] thi không thể được"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_tag_post_ids
+#: model:ir.ui.menu,name:website_forum.menu_forum_posts
+#: model:ir.ui.view,arch_db:website_forum.forum_index
+msgid "Posts"
+msgstr "Bài viết"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.new_question
+msgid "Provide enough details and, if possible, give an example."
+msgstr "Cung cấp đủ chi tiết và, nếu có thể, hãy cho một ví dụ."
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.edit_profile
+msgid "Public profile"
+msgstr "Hồ sơ công cộng"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_25
+#: model:gamification.challenge,name:website_forum.challenge_pundit
+#: model:gamification.goal.definition,name:website_forum.definition_pundit
+msgid "Pundit"
+msgstr "Pundit"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/xml/website_forum_share_templates.xml:48
+#, python-format
+msgid "Put this question back in the top list by sharing it on social networks."
+msgstr "Put this question back in the top list by sharing it on social networks."
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:98
+#, python-format
+msgid "Put your answer here."
+msgstr "Put your answer here."
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:71
+#, python-format
+msgid "Put your question here."
+msgstr "Put your question here."
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header_footer_custom
+msgid "Q&amp;amp;A"
+msgstr "Q&amp;amp;A"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:66
+#: selection:forum.forum,default_post_type:0
+#: selection:forum.post,post_type:0
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_parent_id
+#, python-format
+msgid "Question"
+msgstr "Câu hỏi"
+
+#. module: website_forum
+#: code:addons/website_forum/models/forum.py:497
+#: model:mail.message.subtype,description:website_forum.mt_question_edit
+#: model:mail.message.subtype,name:website_forum.mt_question_edit
+#, python-format
+msgid "Question Edited"
+msgstr "Question Edited"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:59
+#, python-format
+msgid "Question Title"
+msgstr "Question Title"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_gen_question_downvote
+msgid "Question downvoted"
+msgstr "Question downvoted"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.display_post_question_block
+msgid "Question has accepted answer"
+msgstr "Question has accepted answer"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.404
+msgid "Question not found!"
+msgstr "Question not found!"
+
+#. module: website_forum
+#: model:gamification.badge,description:website_forum.badge_q_4
+msgid "Question set as favorite by 1 user"
+msgstr "Question set as favorite by 1 user"
+
+#. module: website_forum
+#: model:gamification.badge,description:website_forum.badge_q_6
+msgid "Question set as favorite by 25 users"
+msgstr "Question set as favorite by 25 users"
+
+#. module: website_forum
+#: model:gamification.badge,description:website_forum.badge_q_5
+msgid "Question set as favorite by 5 users"
+msgstr "Question set as favorite by 5 users"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "Question tools"
+msgstr "Question tools"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_gen_question_upvote
+msgid "Question upvoted"
+msgstr "Question upvoted"
+
+#. module: website_forum
+#: model:gamification.badge,description:website_forum.badge_q_10
+msgid "Question voted up 15 times"
+msgstr "Question voted up 15 times"
+
+#. module: website_forum
+#: model:gamification.badge,description:website_forum.badge_q_8
+msgid "Question voted up 4 times"
+msgstr "Question voted up 4 times"
+
+#. module: website_forum
+#: model:gamification.badge,description:website_forum.badge_q_9
+msgid "Question voted up 6 times"
+msgstr "Question voted up 6 times"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_allow_question
+#: model:ir.ui.view,arch_db:website_forum.forum_index
+#: model:ir.ui.view,arch_db:website_forum.user_detail_full
+#: model:ir.ui.view,arch_db:website_forum.view_forum_post_search
+msgid "Questions"
+msgstr "Câu hỏi"
+
+#. module: website_forum
+#: code:addons/website_forum/models/forum.py:509
+#, python-format
+msgid "Re: %s"
+msgstr "V/v: %s"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "Read Guidelines"
+msgstr "Đọc Hướng dẫn"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.edit_profile
+msgid "Real name"
+msgstr "Tên thật"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_closed_reason_id
+msgid "Reason"
+msgstr "Lý do"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_reason_reason_type
+msgid "Reason Type"
+msgstr "Reason Type"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.close_post
+msgid "Reason:"
+msgstr "Reason:"
+
+#. module: website_forum
+#: model:gamification.badge,description:website_forum.badge_a_1
+msgid "Received at least 3 upvote for an answer for the first time"
+msgstr "Received at least 3 upvote for an answer for the first time"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.display_post_question_block
+msgid "Redirect to external link"
+msgstr "Redirect to external link"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.post_description_full
+msgid "Reject <i class=\"fa fa-times\"/>"
+msgstr "Reject <i class=\"fa fa-times\"/>"
+
+#. module: website_forum
+#: selection:forum.forum,default_order:0
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_relevancy
+#: model:ir.ui.view,arch_db:website_forum.forum_index
+msgid "Relevance"
+msgstr "Relevance"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.view_forum_forum_form
+msgid "Relevance Computation"
+msgstr "Relevance Computation"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.post_answers
+#: model:ir.ui.view,arch_db:website_forum.post_description_full
+msgid "Reply"
+msgstr "Trả lời"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_self_reply
+msgid "Reply to own question"
+msgstr "Reply to own question"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.404
+#: model:ir.ui.view,arch_db:website_forum.private_profile
+msgid "Return to the question list."
+msgstr "Về danh mục câu hỏi."
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_moderator_id
+msgid "Reviewed by"
+msgstr "Reviewed by"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_property_product_pricelist
+msgid "Sale Pricelist"
+msgstr "Bảng giá bán"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.edit_post
+msgid "Save"
+msgstr "Save"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_26
+#: model:gamification.challenge,name:website_forum.challenge_scholar
+#: model:gamification.goal.definition,name:website_forum.definition_scholar
+msgid "Scholar"
+msgstr "Học giả"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.view_forum_post_search
+msgid "Search in Post"
+msgstr "Tìm trong bài"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_relevancy_time_decay
+msgid "Second Relevance Parameter"
+msgstr "Second Relevance Parameter"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "Seen:"
+msgstr "Được thấy:"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:29
+#, python-format
+msgid "Select this menu item to create a new forum."
+msgstr "Select this menu item to create a new forum."
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_a_8
+#: model:gamification.challenge,name:website_forum.challenge_self_learner
+#: model:gamification.goal.definition,name:website_forum.definition_self_learner
+msgid "Self-Learner"
+msgstr "Tự học"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.view_forum_forum_form
+#: model:ir.ui.view,arch_db:website_forum.view_forum_post_form
+msgid "Send a message to the group"
+msgstr "Gửi một tin nhắn đến nhóm"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.new_question
+msgid "Set a clear, explicit and concise question title\n"
+"                (check"
+msgstr "Set a clear, explicit and concise question title\n"
+"                (check"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.post_description_full
+msgid "Share"
+msgstr "Chia sẻ"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.new_link
+msgid "Share an awesome link. Your post will appear in the 'Newest' top-menu.\n"
+"            If the community vote on your post, it will get traction by being promoted\n"
+"            in the homepage."
+msgstr "Chia sẻ một link hữu ích. Bài của bạn sẽ xuất hiện trong trình đơn 'Mới nhất'.\n"
+"            Nếu cộng đồng bầu chọn cho bài của bạn, bài sẽ được kéo lên ở trang chủ."
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/xml/website_forum_share_templates.xml:39
+#, python-format
+msgid "Share this content to increase your chances to be featured on the front page and attract more visitors."
+msgstr "Chia sẻ nội dung này để tăng cơ hội của bạn xuất hiện được đề cao ở trang chính và thu hút thêm độc giả."
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_allow_share
+msgid "Sharing Options"
+msgstr "Tuỳ chọn Chia sẻ"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_silver_badge
+msgid "Silver badges count"
+msgstr "Silver badges count"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:16
+#, python-format
+msgid "Skip It"
+msgstr "Skip It"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_forum.js:58
+#, python-format
+msgid "Sorry you must be logged to flag a post"
+msgstr "Sorry you must be logged to flag a post"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_forum.js:106
+#, python-format
+msgid "Sorry you must be logged to vote"
+msgstr "Sorry you must be logged to vote"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_forum.js:137
+#, python-format
+msgid "Sorry, anonymous users cannot choose correct answer."
+msgstr "Sorry, anonymous users cannot choose correct answer."
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.404
+msgid "Sorry, this question is not available anymore."
+msgstr "Sorry, this question is not available anymore."
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_forum.js:101
+#, python-format
+msgid "Sorry, you cannot vote for your own posts"
+msgstr "Sorry, you cannot vote for your own posts"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.forum_index
+msgid "Sort by"
+msgstr "Xếp theo"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:16
+#, python-format
+msgid "Start Tutorial"
+msgstr "Start Tutorial"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "Stats"
+msgstr "Thống kê"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_state
+msgid "Status"
+msgstr "Tình trạng"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_q_6
+#: model:gamification.challenge,name:website_forum.challenge_stellar_question_25
+msgid "Stellar Question"
+msgstr "Câu hỏi xuất sắc"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_q_7
+#: model:gamification.challenge,name:website_forum.challenge_student
+msgid "Student"
+msgstr "Sinh viên"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+#: model:ir.ui.view,arch_db:website_forum.new_link
+msgid "Submit a Link"
+msgstr "Đăng tải một Link"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_31
+#: model:gamification.challenge,name:website_forum.challenge_supporter
+#: model:gamification.goal.definition,name:website_forum.definition_supporter
+msgid "Supporter"
+msgstr "Chuyên viên hỗ trợ"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.view_forum_post_search
+msgid "Tag"
+msgstr "Từ khóa"
+
+#. module: website_forum
+#: sql_constraint:forum.tag:0
+msgid "Tag name already exists !"
+msgstr "Tag name already exists !"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_tag_ids
+#: model:ir.ui.view,arch_db:website_forum.edit_post
+#: model:ir.ui.view,arch_db:website_forum.forum_index
+#: model:ir.ui.view,arch_db:website_forum.header
+#: model:ir.ui.view,arch_db:website_forum.new_discussion
+#: model:ir.ui.view,arch_db:website_forum.new_link
+#: model:ir.ui.view,arch_db:website_forum.new_question
+#: model:ir.ui.view,arch_db:website_forum.tag
+msgid "Tags"
+msgstr "Tags"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_32
+#: model:gamification.challenge,name:website_forum.challenge_taxonomist
+#: model:gamification.goal.definition,name:website_forum.definition_taxonomist
+msgid "Taxonomist"
+msgstr "Nhà phân loại"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_a_1
+#: model:gamification.challenge,name:website_forum.challenge_teacher
+#: model:gamification.goal.definition,name:website_forum.definition_teacher
+msgid "Teacher"
+msgstr "Giáo viên"
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_forum_post_bump_date
+msgid "Technical field allowing to bump a question. Writing on this field will trigger a write on write_date and therefore bump the post. Directly writing on write_date is currently not supported and this field is a workaround."
+msgstr "Technical field allowing to bump a question. Writing on this field will trigger a write on write_date and therefore bump the post. Directly writing on write_date is currently not supported and this field is a workaround."
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/xml/website_forum_share_templates.xml:9
+#, python-format
+msgid "Thanks for posting!"
+msgstr "Thanks for posting!"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.post_description_full
+msgid "The"
+msgstr "The"
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_res_users_property_account_position_id
+msgid "The fiscal position will determine taxes and accounts used for the partner."
+msgstr "Vị thế Tài khoá sẽ xác nhận thuế và tài khoản được sử dụng cho đối tác này."
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.moderation_queue
+msgid "The flagged queue is empty."
+msgstr "The flagged queue is empty."
+
+#. module: website_forum
+#: model:forum.forum,faq:website_forum.forum_help
+msgid "The goal of this site is create a relevant knowledge base that would answer\n"
+"    questions related to Odoo."
+msgstr "The goal of this site is create a relevant knowledge base that would answer\n"
+"    questions related to Odoo."
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.moderation_queue
+msgid "The offensive queue is empty."
+msgstr "The offensive queue is empty."
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_res_users_has_unreconciled_entries
+msgid "The partner has at least one unreconciled debit and credit since last time the invoices & payments matching was performed."
+msgstr "The partner has at least one unreconciled debit and credit since last time the invoices & payments matching was performed."
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.moderation_queue
+msgid "The validation queue is empty."
+msgstr "The validation queue is empty."
+
+#. module: website_forum
+#: model:forum.forum,faq:website_forum.forum_help
+msgid "Therefore questions and answers can be edited like wiki pages by experienced users of\n"
+"    this site in order to improve the overall quality of the knowledge base content.\n"
+"    Such privileges are granted based on user karma level: you will be able to do the same\n"
+"    once your karma gets high enough."
+msgstr "Therefore questions and answers can be edited like wiki pages by experienced users of\n"
+"    this site in order to improve the overall quality of the knowledge base content.\n"
+"    Such privileges are granted based on user karma level: you will be able to do the same\n"
+"    once your karma gets high enough."
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_res_users_property_account_payable_id
+msgid "This account will be used instead of the default one as the payable account for the current partner"
+msgstr "Tài khoản được sử dụng mặc định như là tài khoản phải trả của đối tác"
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_res_users_property_account_receivable_id
+msgid "This account will be used instead of the default one as the receivable account for the current partner"
+msgstr "Tài khoản được sử dụng mặc định như là tài khoản phải thu của đối tác"
+
+#. module: website_forum
+#: model:forum.forum,faq:website_forum.forum_help
+msgid "This community is for professional and enthusiast users,\n"
+"    partners and programmers. You can ask questions about:"
+msgstr ""
+
+#. module: website_forum
+#: model:forum.forum,description:website_forum.forum_help
+msgid "This community is for professionals and enthusiasts of our products and services. Share and discuss the best content and new marketing ideas, build your professional profile and become a better marketer together."
+msgstr "Cộng đồng này là một cộng đồng các chuyên gia và những người có đam mê với đầy nhiệt huyết với các sản phẩm và dịch vụ của chúng tôi. Chia sẻ và thảo luận những nội dung tốt nhất và các ý tưởng marketing mới, xây dựng hồ sơ chuyên nghiệp cho chính bạn thông qua sự đóng góp cho cộng đồng này."
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_forum_forum_relevancy_post_vote
+msgid "This formula is used in order to sort by relevance. The variable 'votes' represents number of votes for a post, and 'days' is number of days since the post creation"
+msgstr "This formula is used in order to sort by relevance. The variable 'votes' represents number of votes for a post, and 'days' is number of days since the post creation"
+
+#. module: website_forum
+#: code:addons/website_forum/models/forum.py:408
+#, python-format
+msgid "This forum does not allow %s"
+msgstr "This forum does not allow %s"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:110
+#, python-format
+msgid "This page contain new created question and its answer."
+msgstr "This page contain new created question and its answer."
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:90
+#, python-format
+msgid "This page contain new created question."
+msgstr "This page contain new created question."
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:49
+#, python-format
+msgid "This page contains all the information related to the new forum."
+msgstr "This page contains all the information related to the new forum."
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_res_users_property_supplier_payment_term_id
+msgid "This payment term will be used instead of the default one for purchase orders and vendor bills"
+msgstr "This payment term will be used instead of the default one for purchase orders and vendor bills"
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_res_users_property_payment_term_id
+msgid "This payment term will be used instead of the default one for sale orders and customer invoices"
+msgstr "Điều khoản thanh toán này sẽ được sử dụng thay cho điều khoản mặc định trên hợp đồng bán hàng và hoá đơn khách hàng"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_forum.js:68
+#, python-format
+msgid "This post can not be flagged"
+msgstr "This post can not be flagged"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_forum.js:63
+#, python-format
+msgid "This post is already flagged"
+msgstr "This post is already flagged"
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_res_users_property_product_pricelist
+msgid "This pricelist will be used, instead of the default one, for sales to the current partner"
+msgstr "Bảng giá này được sử dụng thay cho bảng giá mặc định, cho việc bán hàng cho đối tác hiện tại"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.private_profile
+msgid "This profile is private!"
+msgstr "Hồ sơ này mang tính riêng tư!"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.forum_index
+msgid "Threads"
+msgstr "Threads"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_name
+msgid "Title"
+msgstr "Tiêu đề"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.edit_post
+#: model:ir.ui.view,arch_db:website_forum.new_question
+msgid "Title must not be empty"
+msgstr "Title must not be empty"
+
+#. module: website_forum
+#: code:addons/website_forum/controllers/main.py:321
+#: code:addons/website_forum/controllers/main.py:384
+#, python-format
+msgid "Title should not be empty."
+msgstr "Title should not be empty."
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_vote_recipient_id
+msgid "To"
+msgstr "Đến"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.new_question
+msgid "To improve your chance getting an answer:"
+msgstr "To improve your chance getting an answer:"
+
+#. module: website_forum
+#: model:forum.forum,faq:website_forum.forum_help
+msgid "To prevent your question from being flagged and possibly removed, avoid asking\n"
+"    subjective questions where …"
+msgstr "To prevent your question from being flagged and possibly removed, avoid asking\n"
+"    subjective questions where …"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_total_invoiced
+msgid "Total Invoiced"
+msgstr "Tổng tiền hoá đơn đã xuất"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_debit
+msgid "Total Payable"
+msgstr "Tổng phải trả"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_credit
+msgid "Total Receivable"
+msgstr "Tổng phải thu"
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_res_users_credit
+msgid "Total amount this customer owes you."
+msgstr "Tổng số tiền khách hàng này nợ bạn."
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_res_users_debit
+msgid "Total amount you have to pay to this vendor."
+msgstr "Total amount you have to pay to this vendor."
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "Trending"
+msgstr "Xu hướng"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_post_type
+msgid "Type"
+msgstr "Kiểu"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_content_link
+msgid "URL"
+msgstr ""
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_forum_post_content_link
+msgid "URL of Link Articles"
+msgstr ""
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.new_link
+msgid "URL to Share"
+msgstr "URL muốn chia sẻ"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.forum_index
+msgid "Unanswered"
+msgstr "Chưa trả lời"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_comment_unlink_all
+msgid "Unlink all comments"
+msgstr "Unlink all comments"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_comment_unlink_own
+msgid "Unlink own comments"
+msgstr "Unlink own comments"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_message_unread
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_message_unread
+msgid "Unread Messages"
+msgstr "Thông điệp chưa đọc"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_message_unread_counter
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "Unread Messages Counter"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.edit_profile
+msgid "Update"
+msgstr "Cập nhật"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_write_date
+msgid "Update on"
+msgstr "Cập nhật vào"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_write_uid
+msgid "Updated by"
+msgstr "Cập nhật bởi"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_upvote
+msgid "Upvote"
+msgstr "Upvote"
+
+#. module: website_forum
+#: model:gamification.goal.definition,name:website_forum.definition_student
+msgid "Upvoted question (1)"
+msgstr "Upvoted question (1)"
+
+#. module: website_forum
+#: model:gamification.goal.definition,name:website_forum.definition_great_question
+msgid "Upvoted question (15)"
+msgstr "Upvoted question (15)"
+
+#. module: website_forum
+#: model:gamification.goal.definition,name:website_forum.definition_nice_question
+msgid "Upvoted question (4)"
+msgstr "Upvoted question (4)"
+
+#. module: website_forum
+#: model:gamification.goal.definition,name:website_forum.definition_good_question
+msgid "Upvoted question (6)"
+msgstr "Upvoted question (6)"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:22
+#, python-format
+msgid "Use this <em>'Content'</em> menu to create a new forum like any other document (page, menu, products, event, ...)."
+msgstr "Use this <em>'Content'</em> menu to create a new forum like any other document (page, menu, products, event, ...)."
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_vote_user_id
+msgid "User"
+msgstr "User"
+
+#. module: website_forum
+#: model:ir.model,name:website_forum.model_res_users
+msgid "Users"
+msgstr "Users"
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_forum_forum_allow_question
+msgid "Users can answer only once per question. Contributors can edit answers and mark the right ones."
+msgstr "Users can answer only once per question. Contributors can edit answers and mark the right ones."
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_res_users_currency_id
+msgid "Utility field to express amount currency"
+msgstr "Utility field to express amount currency"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_property_supplier_payment_term_id
+msgid "Vendor Payment Term"
+msgstr "Điều khoản thanh toán Nhà cung cấp"
+
+#. module: website_forum
+#: code:addons/website_forum/models/forum.py:762
+#: model:ir.ui.view,arch_db:website_forum.display_post_question_block
+#, python-format
+msgid "View"
+msgstr "Lượt xem"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "View Your Badges"
+msgstr "Xem các Huy chương của bạn"
+
+#. module: website_forum
+#: model:ir.model,name:website_forum.model_forum_post_vote
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_vote_vote
+msgid "Vote"
+msgstr "Bầu chọn"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_vote_count
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_vote_ids
+#: model:ir.ui.view,arch_db:website_forum.user_detail_full
+msgid "Votes"
+msgstr "Bầu chọn"
+
+#. module: website_forum
+#: selection:forum.post,state:0
+msgid "Waiting Validation"
+msgstr "Đang chờ thẩm định"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.post_description_full
+msgid "Waiting for validation"
+msgstr "Đang chờ thẩm định"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.new_link
+msgid "We keep a high level of quality in showcased posts, around 20% of the submited\n"
+"            posts will be featured."
+msgstr "Chúng tôi duy trì một mức chất lượng cao các bài viết được trình diễn, khoảng 20% các bài viết\n"
+"            sẽ được đề cao."
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.edit_profile
+msgid "Website"
+msgstr "Trang web"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_website_message_ids
+msgid "Website Messages"
+msgstr "Thông điệp Website"
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_forum_forum_website_message_ids
+msgid "Website communication history"
+msgstr "Lịch sử thông tin liên lạc website"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_website_meta_description
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_website_meta_description
+#: model:ir.model.fields,field_description:website_forum.field_forum_tag_website_meta_description
+msgid "Website meta description"
+msgstr "Website meta description"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_website_meta_keywords
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_website_meta_keywords
+#: model:ir.model.fields,field_description:website_forum.field_forum_tag_website_meta_keywords
+msgid "Website meta keywords"
+msgstr "Website meta keywords"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_website_meta_title
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_website_meta_title
+#: model:ir.model.fields,field_description:website_forum.field_forum_tag_website_meta_title
+msgid "Website meta title"
+msgstr "Website meta title"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_welcome_message
+msgid "Welcome Message"
+msgstr "Welcome Message"
+
+#. module: website_forum
+#: model:forum.forum,faq:website_forum.forum_help
+msgid "What kinds of questions can I ask here?"
+msgstr "Loại câu hỏi nào tôi có thể hỏi ở đây?"
+
+#. module: website_forum
+#: model:forum.forum,faq:website_forum.forum_help
+msgid "What should I avoid in my answers?"
+msgstr "Tôi cần tránh điều gì trong câu trả lời của tôi?"
+
+#. module: website_forum
+#: model:forum.forum,faq:website_forum.forum_help
+msgid "What should I avoid in my questions?"
+msgstr "Tôi cần tránh điều gì trong câu hỏi của tôi?"
+
+#. module: website_forum
+#: model:forum.forum,faq:website_forum.forum_help
+msgid "When a question or answer is upvoted, the user who posted them will gain some\n"
+"    points, which are called \"karma points\". These points serve as a rough\n"
+"    measure of the community trust to him/her. Various moderation tasks are\n"
+"    gradually assigned to the users based on those points."
+msgstr "When a question or answer is upvoted, the user who posted them will gain some\n"
+"    points, which are called \"karma points\". These points serve as a rough\n"
+"    measure of the community trust to him/her. Various moderation tasks are\n"
+"    gradually assigned to the users based on those points."
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_forum_forum_allow_link
+msgid "When clicking on the post, it redirects to an external link"
+msgstr "When clicking on the post, it redirects to an external link"
+
+#. module: website_forum
+#: model:forum.forum,faq:website_forum.forum_help
+msgid "Why can other people edit my questions/answers?"
+msgstr "Why can other people edit my questions/answers?"
+
+#. module: website_forum
+#: code:addons/website_forum/models/forum.py:140
+#, python-format
+msgid "You cannot choose %s as default post since the forum does not allow it."
+msgstr "You cannot choose %s as default post since the forum does not allow it."
+
+#. module: website_forum
+#: model:forum.forum,faq:website_forum.forum_help
+msgid "You should only ask practical, answerable questions based\n"
+"    on actual problems that you face. Chatty, open-ended\n"
+"    questions diminish the usefulness of this site and push\n"
+"    other questions off the front page."
+msgstr "You should only ask practical, answerable questions based\n"
+"    on actual problems that you face. Chatty, open-ended\n"
+"    questions diminish the usefulness of this site and push\n"
+"    other questions off the front page."
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.post_answer
+msgid "Your Answer"
+msgstr "Trả lời của bạn"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.new_discussion
+msgid "Your Discussion Title..."
+msgstr "Tiêu đề Thảo luận của bạn..."
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.new_question
+msgid "Your Question Title..."
+msgstr "Tiêu đề Câu hỏi của bạn..."
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.post_reply
+msgid "Your Reply"
+msgstr "Phản hồi của bạn"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.faq
+msgid "accept any answer"
+msgstr "chấp thuận bất kỳ trả lời nào"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.new_question
+msgid "and"
+msgstr "và"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.close_post
+msgid "back to post"
+msgstr "back to post"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.new_question
+msgid "bad examples"
+msgstr "bad examples"
+
+#. module: website_forum
+#: selection:gamification.badge,level:0
+msgid "bronze"
+msgstr "đồng"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.post_description_full
+msgid "by"
+msgstr "bởi"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.forum_index
+msgid "by activity date"
+msgstr "theo ngày hoạt động"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.forum_index
+msgid "by most answered"
+msgstr "theo được trả lời nhiều nhất"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.forum_index
+msgid "by most voted"
+msgstr "theo được bầu chọn nhiều nhất"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.forum_index
+msgid "by newest"
+msgstr "by newest"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.forum_index
+msgid "by relevance"
+msgstr "by relevance"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.faq
+msgid "close any posts"
+msgstr "close any posts"
+
+#. module: website_forum
+#: model:forum.post.reason,name:website_forum.reason_7
+msgid "contains offensive or malicious remarks"
+msgstr "contains offensive or malicious remarks"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.faq
+msgid "delete any comment"
+msgstr "delete any comment"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.faq
+msgid "delete any question or answer"
+msgstr "delete any question or answer"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.faq
+msgid "delete own comment"
+msgstr "delete own comment"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.faq
+msgid "downvote"
+msgstr "downvote"
+
+#. module: website_forum
+#: model:forum.post.reason,name:website_forum.reason_1
+msgid "duplicate post"
+msgstr "duplicate post"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.new_link
+msgid "e.g. https://www.odoo.com"
+msgstr "e.g. https://www.odoo.com"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.faq
+msgid "edit any post, view offensive flags"
+msgstr "edit any post, view offensive flags"
+
+#. module: website_forum
+#: model:forum.forum,faq:website_forum.forum_help
+msgid "every answer is equally valid: “What’s your favorite ______?”"
+msgstr "every answer is equally valid: “What’s your favorite ______?”"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.faq
+msgid "flag offensive, close own questions"
+msgstr "flag offensive, close own questions"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "flagged"
+msgstr "được gắn cờ"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "follower(s)"
+msgstr "follower(s)"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.post_description_full
+msgid "for reason:"
+msgstr "vì lý do:"
+
+#. module: website_forum
+#: selection:gamification.badge,level:0
+msgid "gold"
+msgstr "vàng"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.new_question
+msgid "good examples"
+msgstr "ví dụ tốt"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.post_description_full
+msgid "has been closed"
+msgstr "has been closed"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/xml/website_forum_share_templates.xml:36
+#, python-format
+msgid "here"
+msgstr "here"
+
+#. module: website_forum
+#: model:forum.forum,faq:website_forum.forum_help
+msgid "how to configure or customize Odoo to specific business needs,"
+msgstr "how to configure or customize Odoo to specific business needs,"
+
+#. module: website_forum
+#: model:forum.forum,faq:website_forum.forum_help
+msgid "how to develop modules for your own need,"
+msgstr "how to develop modules for your own need,"
+
+#. module: website_forum
+#: model:forum.forum,faq:website_forum.forum_help
+msgid "how to install Odoo on a specific infrastructure,"
+msgstr "how to install Odoo on a specific infrastructure,"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/xml/website_forum_share_templates.xml:34
+#, python-format
+msgid "if your\n"
+"        answer is selected as the right one. See what you can do with karma"
+msgstr "if your\n"
+"        answer is selected as the right one. See what you can do with karma"
+
+#. module: website_forum
+#: model:forum.post.reason,name:website_forum.reason_13
+msgid "inappropriate and unacceptable statements"
+msgstr "inappropriate and unacceptable statements"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.faq
+msgid "insert text link, upload files"
+msgstr "insert text link, upload files"
+
+#. module: website_forum
+#: model:forum.post.reason,name:website_forum.reason_11
+msgid "insulting and offensive language"
+msgstr "insulting and offensive language"
+
+#. module: website_forum
+#: model:forum.forum,faq:website_forum.forum_help
+msgid "it is a rant disguised as a question: “______ sucks, am I right?”"
+msgstr "it is a rant disguised as a question: “______ sucks, am I right?”"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.user_detail_full
+msgid "karma"
+msgstr "karma"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/xml/website_forum_share_templates.xml:34
+#, python-format
+msgid "karma points"
+msgstr "karma points"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.user_detail_full
+msgid "last connection"
+msgstr "last connection"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.user_detail_full
+msgid "location"
+msgstr "location"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.user_detail_full
+msgid "member since"
+msgstr "thành viên từ"
+
+#. module: website_forum
+#: model:forum.post.reason,name:website_forum.reason_4
+msgid "not a real post"
+msgstr "not a real post"
+
+#. module: website_forum
+#: model:forum.post.reason,name:website_forum.reason_6
+msgid "not relevant or out dated"
+msgstr "not relevant or out dated"
+
+#. module: website_forum
+#: model:forum.post.reason,name:website_forum.reason_2
+msgid "off-topic or not relevant"
+msgstr "off-topic or not relevant"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.post_comment
+#: model:ir.ui.view,arch_db:website_forum.post_description_full
+msgid "on"
+msgstr "trên"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/xml/website_forum_share_templates.xml:29
+#, python-format
+msgid "on social networks get an answer within\n"
+"        5 hours. Questions shared on two social networks have"
+msgstr "on social networks get an answer within\n"
+"        5 hours. Questions shared on two social networks have"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "post"
+msgstr "post"
+
+#. module: website_forum
+#: model:forum.post.reason,name:website_forum.reason_15
+msgid "racist and hate speech"
+msgstr "racist and hate speech"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.badge_user
+msgid "received this badge:"
+msgstr "received this badge:"
+
+#. module: website_forum
+#: selection:gamification.badge,level:0
+msgid "silver"
+msgstr "bạc"
+
+#. module: website_forum
+#: model:forum.post.reason,name:website_forum.reason_8
+msgid "spam or advertising"
+msgstr "spam hoặc quảng cáo"
+
+#. module: website_forum
+#: model:forum.forum,faq:website_forum.forum_help
+msgid "specific questions about Odoo service offers, etc."
+msgstr "specific questions about Odoo service offers, etc."
+
+#. module: website_forum
+#: model:forum.forum,faq:website_forum.forum_help
+msgid "there is no actual problem to be solved: “I’m curious if other people feel like I do.”"
+msgstr "there is no actual problem to be solved: “I’m curious if other people feel like I do.”"
+
+#. module: website_forum
+#: model:forum.post.reason,name:website_forum.reason_14
+msgid "threatening language"
+msgstr "threatening language"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "time"
+msgstr "lần"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "times"
+msgstr "lần"
+
+#. module: website_forum
+#: model:forum.post.reason,name:website_forum.reason_9
+msgid "too localized"
+msgstr "too localized"
+
+#. module: website_forum
+#: model:forum.post.reason,name:website_forum.reason_3
+msgid "too subjective and argumentative"
+msgstr "too subjective and argumentative"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.faq
+msgid "upvote, add comments"
+msgstr "upvote, add comments"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.badge_user
+msgid "user"
+msgstr "người dùng"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.badge_user
+msgid "users"
+msgstr "người dùng"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.post_description_full
+msgid "views"
+msgstr "lượt xem"
+
+#. module: website_forum
+#: model:forum.post.reason,name:website_forum.reason_12
+msgid "violent language"
+msgstr "violent language"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.user_detail_full
+msgid "votes"
+msgstr "bầu chọn"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "waiting for validation"
+msgstr "đang chờ thẩm định"
+
+#. module: website_forum
+#: model:forum.forum,faq:website_forum.forum_help
+msgid "we are being asked an open-ended, hypothetical question: “What if ______ happened?”"
+msgstr "we are being asked an open-ended, hypothetical question: “What if ______ happened?”"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.user_detail_full
+msgid "website"
+msgstr ""
+
+#. module: website_forum
+#: model:forum.forum,faq:website_forum.forum_help
+msgid "what's the best way to use Odoo for a specific business need,"
+msgstr "what's the best way to use Odoo for a specific business need,"
+
+#. module: website_forum
+#: model:forum.forum,faq:website_forum.forum_help
+msgid "your answer is provided along with the question, and you expect more answers: “I use ______ for ______, what do you use?”"
+msgstr "your answer is provided along with the question, and you expect more answers: “I use ______ for ______, what do you use?”"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.faq
+msgid "your biography can be seen as tooltip"
+msgstr "tiểu sử của bạn có thể được thấy ở dạng tooltip"
